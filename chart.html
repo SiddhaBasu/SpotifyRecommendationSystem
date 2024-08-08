@@ -1,0 +1,39 @@
+<meta charset="utf-8">   <title> Spotify Pie Chart </title>      <!-- import plugin script -->   <script src="static/Chart.min.js"></script>
+<!-- bar chart canvas element --><canvas id="chart" width="600" height="400"></canvas>
+<script>
+    <br />
+    var mychart = document.getElementById("chart").getContext("2d");   
+
+    const labels = {labels | tojson};
+
+    const data = {
+        labels: labels,
+        datasets: [
+            {
+            label: 'Genres',
+            
+            data: {{data | tojson}}, 
+            Utils.numbers(NUMBER_CFG),
+            backgroundColor: Object.values(Utils.CHART_COLORS),
+            }
+        ]
+    };
+
+    const config = {
+        type: 'pie',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Chart.js Pie Chart'
+            }
+            }
+        },
+    };
+    new Chart(myChart, Pie(pieData));
+</script>
