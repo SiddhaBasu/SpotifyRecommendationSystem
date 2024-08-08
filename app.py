@@ -5,7 +5,7 @@ import time
 import math
 
 CLIENT_ID = "50e136d283084eada48025c49238bce2"
-CLIENT_SECRET = "26b6717d5b294c819103ad9abd1b36bb"
+CLIENT_SECRET = "blahblahblah"
 TOKEN_INFO = "token_info"
 
 permissions = ["user-library-read", "user-top-read", "playlist-read-private", "playlist-modify-private"]
